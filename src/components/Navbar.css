@@ -1,0 +1,15 @@
+a {
+    opacity: 80%;
+    font-size: 24px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-container {
+    padding-left: 300px;
+    padding-right: 300px;
+}
