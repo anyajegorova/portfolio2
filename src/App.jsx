@@ -9,6 +9,8 @@ import Design from './assets/grey_design.png';
 
 import Navbar from './components/Navbar';
 
+import Contact from './views/Contact';
+
 function App() {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
@@ -71,7 +73,7 @@ function App() {
         </section>
 
         <section id='contact_page' data-scroll-section>
-          <h1>Contact Page</h1>
+          <Contact />
         </section>
 
       </main>
