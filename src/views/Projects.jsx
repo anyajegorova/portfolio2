@@ -8,7 +8,7 @@ import Cat4 from '../project_images/cat4.jpg';
 
 const Projects = () => {
     const [currentImage, setCurrentImage] = useState(Cat1);
-    const images = [{ name: 'Project 1', src: Cat1 }, { name: 'Project 2', src: Cat2 }, { id: 'Project 3', src: Cat3 }, { id: 'Project 4', src: Cat4 }]
+    // const images = [{ name: 'Project 1', src: Cat1 }, { name: 'Project 2', src: Cat2 }, { id: 'Project 3', src: Cat3 }, { id: 'Project 4', src: Cat4 }]
 
     // const handleChange = (e) => {
     //     console.log(currentImage);
@@ -27,19 +27,19 @@ const Projects = () => {
         <>
             <div className='main-container'>
                 <div className='projects-list'>
-                    <div className='project-name' onMouseEnter={() => setCurrentImage(Cat1)}>
+                    <div className='project-name' onMouseOver={() => setCurrentImage(Cat1)}>
                         <h5>Project 1</h5>
                         <h6>Website</h6>
                     </div>
-                    <div className='project-name' onMouseEnter={() => setCurrentImage(Cat2)}>
+                    <div className='project-name' onMouseOver={() => setCurrentImage(Cat2)}>
                         <h5>Project 2</h5>
                         <h6>Website</h6>
                     </div>
-                    <div className='project-name' onMouseEnter={() => setCurrentImage(Cat3)}>
+                    <div className='project-name' onMouseOver={() => setCurrentImage(Cat3)}>
                         <h5>Project 3</h5>
                         <h6>UX/UI Design</h6>
                     </div>
-                    <div className='project-name' onMouseEnter={() => setCurrentImage(Cat4)}>
+                    <div className='project-name' onMouseOver={() => setCurrentImage(Cat4)}>
                         <h5>Project 4</h5>
                         <h6>School Team Project</h6>
                     </div>
