@@ -10,6 +10,7 @@ import Design from './assets/grey_design.png';
 import Navbar from './components/Navbar';
 
 import Contact from './views/Contact';
+import Projects from './views/Projects';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -69,7 +70,7 @@ function App() {
         </section>
 
         <section id='project_page' data-scroll-section>
-          <h1>Project Page</h1>
+          <Projects />
         </section>
 
         <section id='contact_page' data-scroll-section>

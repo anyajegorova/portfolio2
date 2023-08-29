@@ -152,10 +152,10 @@ img {
   font-weight: normal;
 }
 
-h5 {
+.secondary-description h5 {
   padding: 0px;
   margin: 0px;
-  font-size: 28px
+  font-size: 28px;
 }
 
 .description-container {
@@ -185,8 +185,11 @@ li {
   justify-content: center;
 }
 
-#contact_page {
+#contact_page, #project_page {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
+
