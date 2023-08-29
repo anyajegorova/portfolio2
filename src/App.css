@@ -98,6 +98,7 @@ html.has-scroll-dragging {
 }
 
 
+
 /*Langing Page*/
 
 .orange-text {
@@ -116,6 +117,7 @@ section span {
   text-align: start;
   line-height: 60px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -125,12 +127,57 @@ img {
 
 .main-info {
   display: flex;
-  justify-content: space-around;
-  min-height: 200px;
   align-items: center;
   width: 90%;
+  height: 800px;
+  justify-content: center;
+  gap: 70px;
 }
 
 .description {
   width: 985px;
+}
+
+.secondary-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.secondary-description {
+  font-size: 24px;
+  max-width: 520px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+h5 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 28px
+}
+
+.description-container {
+  color: #D9D9D9;
+  opacity: 70%;
+}
+
+/*About page*/
+.about_page-container {
+  color: #3B3F44;
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+#about_page{
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
