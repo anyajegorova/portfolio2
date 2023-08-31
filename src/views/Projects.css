@@ -7,8 +7,13 @@
     font-family: 'Inria Serif', serif;
     border-bottom: 1px solid white;
     line-height: 80px;
+    opacity: 70%;
 
     cursor: pointer;
+}
+
+.project-name:hover{
+    opacity: 100%;
 }
 
 

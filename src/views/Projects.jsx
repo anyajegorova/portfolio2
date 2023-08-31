@@ -26,7 +26,7 @@ const Projects = () => {
     return (
         <>
             <div className='main-container'>
-                <div className='projects-list'>
+                <div className='projects-list' data-scroll data-scroll-speed="3">
                     <div className='project-name' onMouseOver={() => setCurrentImage(Cat1)}>
                         <h5>Project 1</h5>
                         <h6>Website</h6>

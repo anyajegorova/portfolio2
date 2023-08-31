@@ -4,6 +4,7 @@ import './Contact.css';
 import LinkedIn from '../assets/linkedin_white.png';
 import Facebook from '../assets/facebook_white.png';
 import X from '../assets/x_white.png';
+import Arrow from '../assets/arrow_top_white.png';
 
 const Contact = () => {
     const form = useRef();
@@ -35,8 +36,8 @@ const Contact = () => {
     return (
         <>
             <div className='contact-container'>
-                <div className='form'>
-                    <p style={{ fontSize: 24, letterSpacing: 2 }}>Message me now!</p>
+                <div className='form' data-scroll data-scroll-speed="3">
+                    <p>Message me now!</p>
                     <form ref={form} onSubmit={sendEmail}>
                         <input type='text' name='user_name' placeholder='Name..' />
                         <input type='email' name='user_email' placeholder='Email..' />
@@ -49,6 +50,7 @@ const Contact = () => {
                     <img src={X} alt='X icon (Twitter)' />
                     <img src={Facebook} alt='Facebook icon' />
                 </div>
+
             </div>
         </>
     )

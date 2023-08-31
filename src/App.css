@@ -99,19 +99,13 @@ html.has-scroll-dragging {
 }
 
 
-
 /*Langing Page*/
 
 .orange-text {
   color: #FF5E00;
-
 }
 
-section span {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 48px;
-  color: white;
-}
+
 
 .section-container {
   width: 100%;
@@ -137,6 +131,10 @@ img {
 
 .description {
   width: 985px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  color: white;
+
 }
 
 .secondary-info {
@@ -163,16 +161,22 @@ img {
   opacity: 70%;
 }
 
+.description p {
+  overflow: hidden;
+}
+
+
+
 /*About page*/
 .about_page-container {
-  color: #3B3F44;
-  font-size: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  font-family: 'Inria Serif', serif;
+  font-family: 'Inria Serif', serif;  
+  color: #3B3F44;
+  font-size: 48px;
 }
 
 li {
@@ -185,11 +189,9 @@ li {
   justify-content: center;
 }
 
-#contact_page, #project_page {
+#contact_page,
+#project_page {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
-

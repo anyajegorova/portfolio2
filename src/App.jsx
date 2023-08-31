@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react'
 import './App.css'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+import Typewriter from 'typewriter-effect';
+
 
 import Avatar from './assets/avatar.png';
 import Avatar2 from './assets/avatar2.png';
@@ -13,9 +15,9 @@ import Contact from './views/Contact';
 import Projects from './views/Projects';
 
 function App() {
-  const [count, setCount] = useState(0);
   const ref = useRef(null);
   const options = { smooth: true, multiplier: 3 }
+
 
   return (
     <LocomotiveScrollProvider options={options} containerRef={ref}>
@@ -26,8 +28,20 @@ function App() {
             <div className='main-info'>
               <img src={Avatar2} alt='avatar image' />
               <div className='description'>
-                <span>Hello and Welcome!<br />
-                  My name is <span className='orange-text'>Anna Jegorova</span> and I’m a future <span className='orange-text'>Front-End Developer</span>.</span></div>
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter.typeString("Hello and Welcome!")
+                      .callFunction(() => {
+                        console.log('String typed')
+                      })
+                      .pauseFor(300)
+                      .deleteAll()
+                      .pauseFor(300)
+                    typewriter.typeString("My name is <span style='color: #FF5E00'>Anna Jegorova</span> and I'm a future <span style='color: #FF5E00'>Front-end Developer </span>.")
+                      .start()
+                  }}
+                />
+              </div>
             </div>
             <div className='secondary-info'>
               <div className='secondary-description'>
@@ -54,15 +68,15 @@ function App() {
 
         <section id='about_page' data-scroll-section>
           <div className='about_page-container'>
-            <div className='heading'>Designing + Coding</div>
+            <div className='heading' data-scroll data-scroll-speed="3">Designing + Coding</div>
             <div className='technologies-list'>
               <ul>
-                <li>Javascript</li>
-                <li>ReactJS</li>
-                <li>NodeJS</li>
-                <li>PostgreSQL</li>
-                <li>MongoDB</li>
-                <li>Figma</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">Javascript</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">ReactJS</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">NodeJS</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">PostgreSQL</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">MongoDB</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">Figma</li>
               </ul>
 
             </div>
