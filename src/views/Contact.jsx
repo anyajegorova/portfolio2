@@ -4,6 +4,7 @@ import './Contact.css';
 import LinkedIn from '../assets/linkedin_white.png';
 import Facebook from '../assets/facebook_white.png';
 import X from '../assets/x_white.png';
+import GitHub from '../assets/github_white2.png';
 import Arrow from '../assets/arrow_top_white.png';
 
 const Contact = () => {
@@ -46,9 +47,10 @@ const Contact = () => {
                     </form>
                 </div>
                 <div className='social-media-links'>
-                    <img src={LinkedIn} alt='LinkedIn icon' />
+                    <a href='https://www.linkedin.com/in/anna-jegorova-b625a31b8/'><img src={LinkedIn} alt='LinkedIn icon' /></a>
                     <img src={X} alt='X icon (Twitter)' />
                     <img src={Facebook} alt='Facebook icon' />
+                    <a href='https://github.com/anyajegorova'><img src={GitHub} alt='GitHub icon' /></a>
                 </div>
 
             </div>

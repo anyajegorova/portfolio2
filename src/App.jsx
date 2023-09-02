@@ -15,6 +15,7 @@ import Contact from './views/Contact';
 import Projects from './views/Projects';
 
 function App() {
+
   const ref = useRef(null);
   const options = { smooth: true, multiplier: 3 }
 
@@ -22,12 +23,14 @@ function App() {
   return (
     <LocomotiveScrollProvider options={options} containerRef={ref}>
       <main data-scroll-container ref={ref}>
+
         <section id='landing_page' data-scroll-section>
           <Navbar />
           <div className='section-container'>
             <div className='main-info'>
               <img src={Avatar2} alt='avatar image' />
               <div className='description'>
+
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter.typeString("Hello and Welcome!")
@@ -41,13 +44,14 @@ function App() {
                       .start()
                   }}
                 />
+
               </div>
             </div>
+
             <div className='secondary-info'>
               <div className='secondary-description'>
                 <img src={Design} alt='design icon' />
                 <h5>UX/UI Design</h5>
-
                 <div className='description-container'>
                   I utilize the best design practices for shaping
                   holistic  and modern interfaces
@@ -61,24 +65,23 @@ function App() {
                   technologies
                 </div>
               </div>
-
             </div>
+
           </div>
         </section>
 
-        <section id='about_page' data-scroll-section>
+        <section id='about_page' data-scroll-section >
           <div className='about_page-container'>
-            <div className='heading' data-scroll data-scroll-speed="3">Designing + Coding</div>
+            <div className='heading' data-scroll data-scroll-speed="3" >Designing + Coding</div>
             <div className='technologies-list'>
               <ul>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">Javascript</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">ReactJS</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" >Javascript</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingRight: 110 }}>ReactJS</li>
                 <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">NodeJS</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">PostgreSQL</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">MongoDB</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">Figma</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingRight: 108 }}>PostgreSQL</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" style={{ paddingLeft: 120 }}>MongoDB</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingRight: 295 }}>Figma</li>
               </ul>
-
             </div>
           </div>
         </section>
@@ -96,4 +99,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

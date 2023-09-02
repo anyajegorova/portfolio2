@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,300&display=swap');
 
 #root {
   box-sizing: border-box;
@@ -174,7 +175,7 @@ img {
   align-items: center;
   justify-content: center;
 
-  font-family: 'Inria Serif', serif;  
+  font-family: 'Inria Serif', serif;
   color: #3B3F44;
   font-size: 48px;
 }
@@ -194,4 +195,15 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.italic {
+  font-family: 'Inter Tight', sans-serif;
+  display: inline-block;
+  transform: skew(30deg, 0deg);
+  /* -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+  -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+  -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+  -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+  transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg); */
 }

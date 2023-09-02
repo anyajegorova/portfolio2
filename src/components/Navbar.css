@@ -13,8 +13,11 @@ nav {
     padding-left: 300px;
     padding-right: 300px;
     height: 60px;
+
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
     display: flex;
     align-items: center;
-    position: skicly;
-    top: 0;
+    background-color: #242424;
 }

@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 
 import './Projects.css';
-import Cat1 from '../project_images/cat1.jpg';
-import Cat2 from '../project_images/cat2.jpg';
-import Cat3 from '../project_images/cat3.jpg';
-import Cat4 from '../project_images/cat4.jpg';
+import Tastybites from '../project_images/tastybites_design.png';
+import Tastybites2 from '../project_images/tastybites_mockup.png';
+import Room from '../project_images/room_collage_blender.png'
+import Clock from '../project_images/clock.png';
+import CourseApp from '../project_images/courseapp_marvel.png';
 
 const Projects = () => {
-    const [currentImage, setCurrentImage] = useState(Cat1);
+    const [currentImage, setCurrentImage] = useState(Tastybites);
     // const images = [{ name: 'Project 1', src: Cat1 }, { name: 'Project 2', src: Cat2 }, { id: 'Project 3', src: Cat3 }, { id: 'Project 4', src: Cat4 }]
 
     // const handleChange = (e) => {
@@ -27,21 +28,21 @@ const Projects = () => {
         <>
             <div className='main-container'>
                 <div className='projects-list' data-scroll data-scroll-speed="3">
-                    <div className='project-name' onMouseOver={() => setCurrentImage(Cat1)}>
-                        <h5>Project 1</h5>
-                        <h6>Website</h6>
+                    <div className='project-name' onMouseOver={() => setCurrentImage(Tastybites)}>
+                        <h5>Tastybites</h5>
+                        <h6>UI Design, Figma</h6>
                     </div>
-                    <div className='project-name' onMouseOver={() => setCurrentImage(Cat2)}>
-                        <h5>Project 2</h5>
-                        <h6>Website</h6>
+                    <div className='project-name' onMouseOver={() => setCurrentImage(Room)}>
+                        <h5>3D Room</h5>
+                        <h6>3D Design, Blender</h6>
                     </div>
-                    <div className='project-name' onMouseOver={() => setCurrentImage(Cat3)}>
-                        <h5>Project 3</h5>
-                        <h6>UX/UI Design</h6>
+                    <div className='project-name' onMouseOver={() => setCurrentImage(Clock)}>
+                        <h5>3D Clock</h5>
+                        <h6>3D Design, Blender</h6>
                     </div>
-                    <div className='project-name' onMouseOver={() => setCurrentImage(Cat4)}>
-                        <h5>Project 4</h5>
-                        <h6>School Team Project</h6>
+                    <div className='project-name' onMouseOver={() => setCurrentImage(CourseApp)}>
+                        <h5>UX App</h5>
+                        <h6>Team Project, Marvel</h6>
                     </div>
                 </div>
                 <div className='projects-image'>
