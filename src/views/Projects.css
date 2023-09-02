@@ -8,11 +8,12 @@
     border-bottom: 1px solid white;
     line-height: 80px;
     opacity: 70%;
+    flex-wrap: wrap;
 
     cursor: pointer;
 }
 
-.project-name:hover{
+.project-name:hover {
     opacity: 100%;
 }
 
@@ -20,7 +21,7 @@
 h5 {
     padding: 0px;
     margin: 0px;
-    font-size: 48px;
+    font-size: 1.5vw;
 }
 
 h6 {
@@ -52,6 +53,29 @@ h6 {
     min-width: 647px;
     min-height: 577px;
     object-fit: cover;
+}
 
+/*Toggle buttons*/
 
+.toggle-container {
+    display: flex;
+    width: 400px;
+}
+
+.toggle-button {
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #646464;
+    color: #fff;
+    width: 200px;
+    height: 32px;
+    cursor: pointer;
+}
+.toggle-button:hover{
+    background-color: #646464;
+    opacity: 80%;
+}
+
+#selected{
+    background-color: #646464;
 }
