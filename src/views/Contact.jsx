@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import './Contact.css';
+import emailjs from '@emailjs/browser';
 
 import LinkedIn from '../assets/linkedin_white.png';
 import Facebook from '../assets/facebook_white.png';

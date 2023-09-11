@@ -69,22 +69,22 @@ const Projects = () => {
 
     return (
         <>
-            <div>
-                <div className='toggle-container' data-scroll data-scroll-speed="3">
-                    <button className='toggle-button' id={option === 'design' ? 'selected' : 'notSelected'} onClick={() => setOption('design')}>Design</button>
-                    <button className='toggle-button' id={option === 'code' ? 'selected' : 'notSelected'} onClick={() => setOption('code')}>Code</button>
-                </div>
-                <div className='main-container'>
 
+
+            <div className='main-container'>
+                <div className='projects-list-container'>
+                    <div className='toggle-container' data-scroll data-scroll-speed="3">
+                        <button className='toggle-button' id={option === 'design' ? 'selected' : 'notSelected'} onClick={() => setOption('design')}>Design</button>
+                        <button className='toggle-button' id={option === 'code' ? 'selected' : 'notSelected'} onClick={() => setOption('code')}>Code</button>
+                    </div>
                     <div className='projects-list' data-scroll data-scroll-speed="3">
                         {toggleOption()}
                     </div>
-                    <div className='projects-image'>
-                        <img src={currentImage} alt='image of the project' />
-                    </div>
+                </div>
+                <div className='projects-image'>
+                    <img src={currentImage} alt='image of the project' />
                 </div>
             </div>
-
 
         </>
     )

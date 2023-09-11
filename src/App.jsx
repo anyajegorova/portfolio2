@@ -9,7 +9,12 @@ import Avatar2 from './assets/avatar2.png';
 import Coding from './assets/grey_coding.png';
 import Design from './assets/grey_design.png';
 
-import Navbar from './components/Navbar';
+import Wave0 from './assets/Wave00.png';
+import Wave1 from './assets/Wave01.png';
+import Wave2 from './assets/Wave02.png';
+import Wave3 from './assets/Wave03.png';
+
+import Footer from './components/Footer';
 
 import Contact from './views/Contact';
 import Projects from './views/Projects';
@@ -25,7 +30,7 @@ function App() {
       <main data-scroll-container ref={ref}>
 
         <section id='landing_page' data-scroll-section>
-          <Navbar />
+          {/* <Navbar /> */}
           <div className='section-container'>
             <div className='main-info'>
               <img src={Avatar2} alt='avatar image' />
@@ -40,7 +45,7 @@ function App() {
                       .pauseFor(300)
                       .deleteAll()
                       .pauseFor(300)
-                    typewriter.typeString("My name is <span style='color: #FF5E00'>Anna Jegorova</span> and I'm a future <span style='color: #FF5E00'>Front-end Developer </span>.")
+                    typewriter.typeString("My name is <span style='color: #FF5E00'>Anna Jegorova</span> and I'm a future <span style='color: #FF5E00'>Front-end Developer</span>!")
                       .start()
                   }}
                 />
@@ -72,16 +77,24 @@ function App() {
 
         <section id='about_page' data-scroll-section >
           <div className='about_page-container'>
-            <div className='heading' data-scroll data-scroll-speed="3" >Designing + Coding</div>
+            <div className='heading' data-scroll data-scroll-speed="-4" >Designing + Coding</div>
             <div className='technologies-list'>
               <ul>
                 <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" >Javascript</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingRight: 110 }}>ReactJS</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingLeft: 5}}>ReactJS</li>
                 <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">NodeJS</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingRight: 108 }}>PostgreSQL</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" style={{ paddingLeft: 120 }}>MongoDB</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingRight: 295 }}>Figma</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingLeft: 12 }}>PostgreSQL</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" style={{ paddingLeft: 122}}>MongoDB</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingRight: 170 }}>Figma</li>
               </ul>
+
+            </div>
+
+            <div className='wave-container'>
+              <img data-scroll data-scroll-speed="0.5" src={Wave0} />
+              <img src={Wave1} />
+              <img data-scroll data-scroll-speed="0.2" src={Wave2} />
+              <img data-scroll data-scroll-speed="2.1" src={Wave3} />
             </div>
           </div>
         </section>
@@ -92,10 +105,13 @@ function App() {
 
         <section id='contact_page' data-scroll-section>
           <Contact />
-        </section>
 
+        </section>
+        <Footer />
       </main>
+
     </LocomotiveScrollProvider>
+
   )
 }
 

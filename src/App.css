@@ -115,6 +115,7 @@ html.has-scroll-dragging {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -140,7 +141,7 @@ img {
 
 .secondary-info {
   display: flex;
-  justify-content: space-around;
+  gap: 300px;
 }
 
 .secondary-description {
@@ -173,7 +174,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   font-family: 'Inria Serif', serif;
   color: #3B3F44;
@@ -182,6 +183,10 @@ img {
 
 li {
   list-style-type: none;
+}
+
+li:hover {
+  animation: 1s ease-in slidein;
 }
 
 #about_page {
@@ -197,3 +202,43 @@ li {
   justify-content: center;
 }
 
+.heading {
+  color: #242424;
+}
+
+.technologies-list {
+  padding-bottom: 200px;
+}
+
+.wave-container {
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  bottom: 0;
+  height: auto;
+}
+
+.wave-container img {
+  width: 100vw;
+  position: absolute;
+}
+
+.wave-container img:nth-child(0) {
+  z-index: 3;
+  margin-bottom: 20px;
+}
+
+.wave-container img:nth-child(1) {
+  z-index: 4;
+  margin-bottom: -80px;
+}
+
+.wave-container img:nth-child(2) {
+  z-index: 1;
+  margin-bottom: 60px;
+}
+
+.wave-container img:nth-child(3) {
+  z-index: 2;
+  margin-bottom: 70px;
+}
