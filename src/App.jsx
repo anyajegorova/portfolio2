@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import './App.css'
+import './locomotive-scroll.css';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import Typewriter from 'typewriter-effect';
 
@@ -13,6 +14,10 @@ import Wave0 from './assets/Wave00.png';
 import Wave1 from './assets/Wave01.png';
 import Wave2 from './assets/Wave02.png';
 import Wave3 from './assets/Wave03.png';
+import Wave4 from './assets/Wave004.png';
+import WaveLandingPage from './assets/WaveLandingPage.png';
+import WaveProjectsBottom from './assets/WaveProjectsBottom.png';
+import WaveFooter from './assets/WaveFooter.png';
 
 import Footer from './components/Footer';
 
@@ -65,27 +70,28 @@ function App() {
               <div className='secondary-description'>
                 <img src={Coding} alt='coding icon' />
                 <h5>Software Development</h5>
-                <div className='description-container'>
+                <div className='description-container' id='grey-color-description'>
                   ..and turn them into code using latest
                   technologies
                 </div>
               </div>
             </div>
-
+            <img src={WaveLandingPage} className='wave'/>
           </div>
         </section>
 
         <section id='about_page' data-scroll-section >
           <div className='about_page-container'>
-            <div className='heading' data-scroll data-scroll-speed="-4" >Designing + Coding</div>
+
             <div className='technologies-list'>
+              <div className='heading' >Designing + Coding</div>
               <ul>
                 <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" >Javascript</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingLeft: 5}}>ReactJS</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ marginLeft: 5 }}>ReactJS</li>
                 <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">NodeJS</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingLeft: 12 }}>PostgreSQL</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" style={{ paddingLeft: 122}}>MongoDB</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ paddingRight: 170 }}>Figma</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ marginLeft: 12 }}>PostgreSQL</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" style={{ marginLeft: 122 }}>MongoDB</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ marginRight: 170 }}>Figma</li>
               </ul>
 
             </div>
@@ -95,6 +101,7 @@ function App() {
               <img src={Wave1} />
               <img data-scroll data-scroll-speed="0.2" src={Wave2} />
               <img data-scroll data-scroll-speed="2.1" src={Wave3} />
+              <img data-scroll data-scroll-speed="-1" src={Wave4} />
             </div>
           </div>
         </section>
@@ -107,7 +114,7 @@ function App() {
           <Contact />
 
         </section>
-        <Footer />
+        {/* <Footer /> */}
       </main>
 
     </LocomotiveScrollProvider>
