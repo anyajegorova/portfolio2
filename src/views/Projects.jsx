@@ -7,6 +7,8 @@ import Room from '../project_images/room_collage_blender.png'
 import Clock from '../project_images/clock.png';
 import CourseApp from '../project_images/courseapp_marvel.png';
 
+import Wave5 from '../assets/wave05.png'
+
 const Projects = () => {
     const [currentImage, setCurrentImage] = useState(Tastybites);
     const [option, setOption] = useState('design');
@@ -84,8 +86,9 @@ const Projects = () => {
                 <div className='projects-image'>
                     <img src={currentImage} alt='image of the project' />
                 </div>
-            </div>
 
+            </div>
+            <img src={Wave5} id='wave-projects'></img>
         </>
     )
 }

@@ -2,11 +2,11 @@ import { useRef } from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
 
-import LinkedIn from '../assets/linkedin_white.png';
-import Facebook from '../assets/facebook_white.png';
-import X from '../assets/x_white.png';
-import GitHub from '../assets/github_white2.png';
-import Arrow from '../assets/arrow_top_white.png';
+import LinkedIn from '../assets/linkedin_light.png';
+import X from '../assets/x_light.png';
+import GitHub from '../assets/github_light.png';
+
+import Wave from '../assets/Wave0.png';
 
 const Contact = () => {
     const form = useRef();
@@ -47,13 +47,18 @@ const Contact = () => {
                         <button type='submit' onClick={handleClick}> Send </button>
                     </form>
                 </div>
-                <div className='social-media-links'>
-                    <a href='https://www.linkedin.com/in/anna-jegorova-b625a31b8/'><img src={LinkedIn} alt='LinkedIn icon' /></a>
-                    <img src={X} alt='X icon (Twitter)' />
-                    <img src={Facebook} alt='Facebook icon' />
-                    <a href='https://github.com/anyajegorova'><img src={GitHub} alt='GitHub icon' /></a>
-                </div>
+                <footer>
+                    <p>
+                        All Rights Reserved <span style={{ color: '#ff5e00' }}>@2023</span>
+                    </p>
+                    <div id='social-media-links'> <a><img src={LinkedIn} /></a>
+                        <a><img src={GitHub} /></a>
 
+                        <a><img src={X} /></a>
+                    </div>
+
+                    <img src={Wave} id='wave-footer'></img>
+                </footer>
             </div>
         </>
     )

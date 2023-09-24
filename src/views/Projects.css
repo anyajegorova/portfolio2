@@ -1,8 +1,9 @@
-.projects-list-container{
+.projects-list-container {
     display: flex;
     gap: 60px;
     flex-direction: column;
 }
+
 .project-name {
     width: 500px;
     display: flex;
@@ -76,13 +77,20 @@ h6 {
     height: 32px;
     cursor: pointer;
 }
-.toggle-button:hover{
+
+.toggle-button:hover {
     background-color: #646464;
     opacity: 40%;
     color: #fff;
 }
 
-#selected{
+#selected {
     background-color: #646464;
     opacity: 60%;
+}
+
+#wave-projects {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
 }

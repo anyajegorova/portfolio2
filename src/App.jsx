@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect';
 
 import Avatar from './assets/avatar.png';
 import Avatar2 from './assets/avatar2.png';
-import Coding from './assets/grey_coding.png';
+import Coding from './assets/dark_grey_coding.png';
 import Design from './assets/grey_design.png';
 
 import Wave0 from './assets/Wave00.png';
@@ -15,6 +15,8 @@ import Wave1 from './assets/Wave01.png';
 import Wave2 from './assets/Wave02.png';
 import Wave3 from './assets/Wave03.png';
 import Wave4 from './assets/Wave004.png';
+
+
 import WaveLandingPage from './assets/WaveLandingPage.png';
 import WaveProjectsBottom from './assets/WaveProjectsBottom.png';
 import WaveFooter from './assets/WaveFooter.png';
@@ -27,7 +29,7 @@ import Projects from './views/Projects';
 function App() {
 
   const ref = useRef(null);
-  const options = { smooth: true, multiplier: 3 }
+  const options = { smooth: true, multiplier: 2 }
 
 
   return (
@@ -59,7 +61,7 @@ function App() {
             </div>
 
             <div className='secondary-info'>
-              <div className='secondary-description'>
+              <div className='secondary-description' id='design-description' >
                 <img src={Design} alt='design icon' />
                 <h5>UX/UI Design</h5>
                 <div className='description-container'>
@@ -67,10 +69,10 @@ function App() {
                   holistic  and modern interfaces
                 </div>
               </div>
-              <div className='secondary-description'>
+              <div className='secondary-description' id='grey-color-description' >
                 <img src={Coding} alt='coding icon' />
                 <h5>Software Development</h5>
-                <div className='description-container' id='grey-color-description'>
+                <div className='description-container' >
                   ..and turn them into code using latest
                   technologies
                 </div>
@@ -86,12 +88,12 @@ function App() {
             <div className='technologies-list'>
               <div className='heading' >Designing + Coding</div>
               <ul>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" >Javascript</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ marginLeft: 5 }}>ReactJS</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">NodeJS</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ marginLeft: 12 }}>PostgreSQL</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" style={{ marginLeft: 122 }}>MongoDB</li>
-                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" style={{ marginRight: 170 }}>Figma</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" >Javascript</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" style={{ marginLeft: 150 }}>ReactJS</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" style={{marginRight: 15}}>NodeJS</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" style={{ marginLeft: 190 }}>PostgreSQL</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" style={{ marginLeft: 90 }}>MongoDB</li>
+                <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" style={{ marginLeft: 30}}>Figma</li>
               </ul>
 
             </div>

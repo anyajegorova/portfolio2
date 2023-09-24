@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
 
-.contact-container {
-    display: flex;
-    flex-direction: row;
-}
 
 form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 400px;
+    padding-bottom: 200px;
 }
 
 .form {
@@ -91,9 +89,6 @@ button[type='submit'] {
     font-family: 'Inter', sans-serif;
     background-color: #ff5e00;
 
-    /* 
-    position: relative;
-    isolation: isolate; */
 }
 
 button[type='submit']:active {
@@ -103,39 +98,6 @@ button[type='submit']:active {
     transition: scale all;
 }
 
-/* button:hover,
-button::after {
-    background-color: #ff5e00;
-    color: #fff;
-
-    transition: background-color 450ms;
-} */
-
-/* button::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    background: #ff5e00;
-    inset: 0;
-    border-radius: 10px;
-
-    scale: 0 1;
-    transition: scale 550ms;
-} */
-
-/* button:hover::after,
-button:focus-visible::after {
-    scale: 1 1;
-
-    color: #fff;
-} */
-
-/* input[type='submit']:hover {
-    color: #fff;
-    background-color: #ff5e00;
-    cursor: pointer;
-} */
-
 p {
     padding: 0;
     margin: 0;
@@ -144,26 +106,46 @@ p {
     margin-bottom: 40px;
     letter-spacing: 2;
     font-family: 'Inter', sans-serif;
-
 }
 
-.social-media-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 100px;
 
-    gap: 20px;
+#wave-footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    max-height: 150px;
 }
 
-.social-media-links img {
-    cursor: pointer;
-    width: 1.5vw;
+footer p {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    padding-left: 200px;
+
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Inria Serif', serif;
 }
 
-.social-media-links img:active {
-    scale: 0.9;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 
-    transition: scale all;
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    right: 0;
+    height: 100px
+}
+
+#social-media-links {
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+}
+
+#social-media-links a img {
+    max-height: 42px;
+    padding-left: 28px;
+    
 }
