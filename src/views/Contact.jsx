@@ -38,7 +38,7 @@ const Contact = () => {
     return (
         <>
             <div className='contact-container'>
-                <div className='form' data-scroll data-scroll-speed="3">
+                <div className='form' data-scroll data-scroll-speed="5">
                     <p>Message me now!</p>
                     <form ref={form} onSubmit={sendEmail}>
                         <input type='text' name='user_name' placeholder='Name..' />
@@ -49,12 +49,12 @@ const Contact = () => {
                 </div>
                 <footer>
                     <p>
-                        All Rights Reserved <span style={{ color: '#ff5e00' }}>@2023</span>
+                        All Rights Reserved <span style={{ color: '#ff5e00' }}>© 2023</span>  Anna Jegorova
                     </p>
-                    <div id='social-media-links'> <a><img src={LinkedIn} /></a>
-                        <a><img src={GitHub} /></a>
-
-                        <a><img src={X} /></a>
+                    <div id='social-media-links'>
+                        <a href='#'><img src={LinkedIn} /></a>
+                        <a href='#'><img src={GitHub} /></a>
+                        <a href='#'><img src={X} /></a>
                     </div>
 
                     <img src={Wave} id='wave-footer'></img>

@@ -18,25 +18,40 @@ body {
   min-height: 100vh;
 }
 
-#landing_page{
+#landing_page {
   min-height: 100vh;
-  background-color:#242424;
+  background-color: #242424;
   font-size: 5rem;
 }
-#about_page{
+
+#about_page {
   min-height: 100vh;
-  background-color:#E3E2E2;
+  background-color: #E3E2E2;
   font-size: 5rem;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
-#project_page{
+
+#project_page {
   min-height: 100vh;
-  background-color:#3B3F44;
+  background-color: #3B3F44;
   font-size: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#contact_page{
+
+#contact_page {
   min-height: 100vh;
-  background-color:#E3E2E2;
+  background-color: #E3E2E2;
   font-size: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {

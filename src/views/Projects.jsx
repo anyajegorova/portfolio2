@@ -11,7 +11,29 @@ import Wave5 from '../assets/wave05.png'
 
 const Projects = () => {
     const [currentImage, setCurrentImage] = useState(Tastybites);
+    const [currentDescription, setCurrentDescription] = useState('Lorem ipsum')
     const [option, setOption] = useState('design');
+
+    const projectsDesign = [
+        {
+            image: { Tastybites },
+            description: 'Lorem Ipsum',
+            projectName: 'Tastybites',
+            shortInfo: 'UI Design, Figma'
+        },
+        {
+            image: { CourseApp },
+            description: 'Lorem Ipsum',
+            projectName: 'UX App',
+            shortInfo: 'Team Project, Axure'
+        },
+        {
+            image: { Room },
+            description: 'Lorem Ipsum',
+            projectName: 'Tastybites',
+            shortInfo: 'UI Design, Figma'
+        },
+    ]
 
     useEffect(() => {
         toggleOption();

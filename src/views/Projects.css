@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+
 .projects-list-container {
     display: flex;
     gap: 60px;
@@ -64,29 +66,39 @@ h6 {
 /*Toggle buttons*/
 
 .toggle-container {
-    display: flex;
     width: 400px;
+    gap: 48px;
+
+    display: flex;
 }
 
 .toggle-button {
-    font-size: 16px;
     background-color: transparent;
-    border: 1px solid #646464;
+    border: transparent;
     color: #fff;
-    width: 200px;
-    height: 32px;
+    opacity: 60%;
+    border-left: 2px solid transparent;
+
     cursor: pointer;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-family: 'Inria Serif', serif;
+
 }
 
 .toggle-button:hover {
-    background-color: #646464;
-    opacity: 40%;
-    color: #fff;
+    opacity: 100%;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #selected {
-    background-color: #646464;
+    color: #ff5e00;
     opacity: 60%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    opacity: 100%;
+    border-left: 2px solid #ff5e00;
+    transition: all 0.1s ease;
 }
 
 #wave-projects {

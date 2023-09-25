@@ -1,0 +1,83 @@
+/*Langing Page*/
+
+
+.section-container {
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: start;
+    align-items: center;
+    line-height: 60px;
+  }
+  
+  .orange-text {
+    color: #FF5E00;
+  }
+  
+  .main-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 100%;
+    gap: 70px;
+    min-height: 50%;
+  }
+  
+  .description {
+    width: 985px;
+    color: white;
+  
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+  }
+  
+  img {
+    max-height: 319px;
+  }
+  
+  .secondary-info {
+    display: flex;
+    gap: max(700px);
+    padding-left: 100px;
+  }
+  
+  .secondary-description {
+    font-size: 24px;
+    font-weight: normal;
+  
+    max-width: 520px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .secondary-description h5 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 28px;
+  }
+  
+  .description-container {
+    opacity: 70%;
+  }
+  
+  .description p {
+    overflow: hidden;
+  }
+  
+  #grey-color-description {
+    color: #242424;
+    opacity: 90%;
+    z-index: 1000;
+  }
+  
+  
+  .wave {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    z-index: -10000;
+  }
