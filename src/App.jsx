@@ -7,6 +7,7 @@ import LandingPage from './views/LandingPage';
 import About from './views/About';
 import Projects from './views/Projects';
 import Contact from './views/Contact';
+import Navbar from './components/Navbar';
 
 function App() {
 

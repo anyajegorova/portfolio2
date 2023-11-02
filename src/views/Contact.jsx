@@ -52,9 +52,9 @@ const Contact = () => {
                         All Rights Reserved <span style={{ color: '#ff5e00' }}>© 2023</span>  Anna Jegorova
                     </p>
                     <div id='social-media-links'>
-                        <a href='#'><img src={LinkedIn} /></a>
-                        <a href='#'><img src={GitHub} /></a>
-                        <a href='#'><img src={X} /></a>
+                        <a href='https://linkedin.com/in/anna-jegorova-b625a31b8'><img src={LinkedIn} /></a>
+                        <a href='https://github.com/anyajegorova'><img src={GitHub} /></a>
+                        <a href='https://twitter.com/anyajegorova'><img src={X} /></a>
                     </div>
 
                     <img src={Wave} id='wave-footer'></img>
